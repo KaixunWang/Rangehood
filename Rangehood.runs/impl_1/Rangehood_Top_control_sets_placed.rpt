@@ -1,0 +1,70 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Sun Dec 15 19:12:00 2024
+| Host         : DESKTOP-H0EMG18 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file Rangehood_Top_control_sets_placed.rpt
+| Design       : Rangehood_Top
+| Device       : xc7a35t
+------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |     8 |
+| Unused register locations in slices containing registers |    49 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               1 |            1 |
+| No           | No                    | Yes                    |             104 |           29 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |              30 |            9 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++-------------------------------------------------------+------------------------------------------------------+-----------------------------------------------+------------------+----------------+
+|                      Clock Signal                     |                     Enable Signal                    |                Set/Reset Signal               | Slice Load Count | Bel Load Count |
++-------------------------------------------------------+------------------------------------------------------+-----------------------------------------------+------------------+----------------+
+|  state_machine/timerClean_10s/one_hz_clk_reg_n_0      |                                                      | state_machine/timerClean_10s/counter_reg[3]_0 |                1 |              1 |
+|  state_machine/timerLevel3_60s/one_hz_clk_reg_n_0     |                                                      | state_machine/timerClean_10s/counter_reg[3]_0 |                1 |              1 |
+|  state_machine/timerLevel3_menu_6s/one_hz_clk_reg_n_0 |                                                      | state_machine/timerClean_10s/counter_reg[3]_0 |                1 |              1 |
+|  clk_IBUF_BUFG                                        |                                                      |                                               |                1 |              1 |
+|  state_machine/timerClean_10s/one_hz_clk_reg_n_0      | state_machine/timerClean_10s/counter[9]_i_1__0_n_0   | state_machine/timerClean_10s/counter_reg[3]_0 |                3 |             10 |
+|  state_machine/timerLevel3_60s/one_hz_clk_reg_n_0     | state_machine/timerLevel3_60s/counter[9]_i_1__1_n_0  | state_machine/timerClean_10s/counter_reg[3]_0 |                3 |             10 |
+|  state_machine/timerLevel3_menu_6s/one_hz_clk_reg_n_0 | state_machine/timerLevel3_menu_6s/counter[9]_i_1_n_0 | state_machine/timerClean_10s/counter_reg[3]_0 |                3 |             10 |
+|  clk_IBUF_BUFG                                        |                                                      | state_machine/timerClean_10s/counter_reg[3]_0 |               26 |            101 |
++-------------------------------------------------------+------------------------------------------------------+-----------------------------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 1      |                     4 |
+| 10     |                     3 |
+| 16+    |                     1 |
++--------+-----------------------+
+
+

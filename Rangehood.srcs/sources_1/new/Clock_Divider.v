@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 2024/12/01 23:31:08
+// Create Date: 2024/12/17 22:16:33
 // Design Name: 
-// Module Name: Clock_Divider
+// Module Name: Clock_divider
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -20,28 +20,27 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module Clock_Divider(
-    input clk,           // 100 MHz 输入时钟
-    input rst_n,         // 异步复位信号
-    output reg clk_out   // 1 Hz 输出时钟
-    );
-    // 100 MHz 分频器计数器
-    reg [26:0] counter;
+module Clock_divider #(parameter DIV_COUNT = 100_000)(
+    input wire clk_in,       // 输入时钟信号 (100 MHz)
+    input wire rst_n,        // 异步复位信号，低有效
+    output reg clk_out       // 输出时钟信号, 100MHz / DIV_COUNT
+);
 
-    // 1 秒钟周期的计数值
-    parameter COUNT_MAX = 100_000_000 - 1;
+    reg [26:0] counter;      // 计数器，27 位可计数到 2^27 - 1 (> 100,000,000)
 
-    always @(posedge clk or negedge rst_n) begin
+    // 分频逻辑
+    always @(posedge clk_in or negedge rst_n) begin
         if (!rst_n) begin
             counter <= 0;
             clk_out <= 0;
         end else begin
-            if (counter == COUNT_MAX) begin
-                counter <= 0;
-                clk_out <= ~clk_out;  
+            if (counter == (DIV_COUNT>>1) - 1) begin
+                counter <= 0;         // 计数器清零
+                clk_out <= ~clk_out; // 翻转输出时钟
             end else begin
-                counter <= counter + 1;
+                counter <= counter + 1; // 计数器递增
             end
         end
     end
+
 endmodule

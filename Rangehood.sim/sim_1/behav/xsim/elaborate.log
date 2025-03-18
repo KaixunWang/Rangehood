@@ -1,0 +1,13 @@
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 213ae414ee46467982740c4759065c4c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Rangehood_Top_behav xil_defaultlib.Rangehood_Top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 10 for port max_time [C:/Users/kaixunwang/Rangehood/Rangehood.srcs/sources_1/new/State_Machine.v:60]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 10 for port max_time [C:/Users/kaixunwang/Rangehood/Rangehood.srcs/sources_1/new/State_Machine.v:65]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port load [C:/Users/kaixunwang/Rangehood/Rangehood.srcs/sources_1/new/Rangehood_top.v:118]
+WARNING: [VRFC 10-278] actual bit length 4 differs from formal bit length 1 for port state [C:/Users/kaixunwang/Rangehood/Rangehood.srcs/sources_1/new/Rangehood_top.v:153]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 10 for port max_time [C:/Users/kaixunwang/Rangehood/Rangehood.srcs/sources_1/new/State_Machine.v:61]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 10 for port max_time [C:/Users/kaixunwang/Rangehood/Rangehood.srcs/sources_1/new/State_Machine.v:62]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel

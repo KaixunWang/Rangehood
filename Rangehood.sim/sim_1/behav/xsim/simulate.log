@@ -1,0 +1,5 @@
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+At time                    0, state_indicator = 0000, light_lighting = 0, light_need_self_cleaning = 0, light_countdown_is_0 = 0
+At time                15000, state_indicator = 0000, light_lighting = 0, light_need_self_cleaning = 0, light_countdown_is_0 = 1
+$finish called at time : 21910 ns : File "C:/Users/kaixunwang/Rangehood/Rangehood.srcs/sim_1/new/tb.v" Line 129

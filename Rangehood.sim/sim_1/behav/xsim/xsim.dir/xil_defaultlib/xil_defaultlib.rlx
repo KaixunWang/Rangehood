@@ -1,0 +1,17 @@
+0.6
+2017.4
+Dec 15 2017
+21:07:18
+C:/Users/kaixunwang/Rangehood/Rangehood.sim/sim_1/behav/xsim/glbl.v,1513215259,verilog,,,,glbl,,,,,,,,
+C:/Users/kaixunwang/Rangehood/Rangehood.srcs/sim_1/new/tb.v,1734670307,verilog,,,,tb_State_Machine,,,,,,,,
+C:/Users/kaixunwang/Rangehood/Rangehood.srcs/sources_1/new/Button_Press_Handler.v,1734270771,verilog,,C:/Users/kaixunwang/Rangehood/Rangehood.srcs/sources_1/new/Clock_divider.v,,Button_Press_Handler_power,,,,,,,,
+C:/Users/kaixunwang/Rangehood/Rangehood.srcs/sources_1/new/Clock_divider.v,1734614431,verilog,,C:/Users/kaixunwang/Rangehood/Rangehood.srcs/sources_1/new/Debouncer.v,,Clock_divider,,,,,,,,
+C:/Users/kaixunwang/Rangehood/Rangehood.srcs/sources_1/new/Debouncer.v,1734670628,verilog,,C:/Users/kaixunwang/Rangehood/Rangehood.srcs/sources_1/new/Display_manager.v,,Debouncer,,,,,,,,
+C:/Users/kaixunwang/Rangehood/Rangehood.srcs/sources_1/new/Display_manager.v,1734614395,verilog,,C:/Users/kaixunwang/Rangehood/Rangehood.srcs/sources_1/new/Rangehood_top.v,,Display_manager,,,,,,,,
+C:/Users/kaixunwang/Rangehood/Rangehood.srcs/sources_1/new/Rangehood_top.v,1734668785,verilog,,C:/Users/kaixunwang/Rangehood/Rangehood.srcs/sources_1/new/State_Machine.v,,Rangehood_Top,,,,,,,,
+C:/Users/kaixunwang/Rangehood/Rangehood.srcs/sources_1/new/State_Machine.v,1734670471,verilog,,C:/Users/kaixunwang/Rangehood/Rangehood.srcs/sources_1/new/Timer.v,,State_Machine,,,,,,,,
+C:/Users/kaixunwang/Rangehood/Rangehood.srcs/sources_1/new/Timer.v,1734668443,verilog,,C:/Users/kaixunwang/Rangehood/Rangehood.srcs/sources_1/new/Timer_s.v,,Timer,,,,,,,,
+C:/Users/kaixunwang/Rangehood/Rangehood.srcs/sources_1/new/Timer_s.v,1734668260,verilog,,C:/Users/kaixunwang/Rangehood/Rangehood.srcs/sources_1/new/regN.v,,Timer_s,,,,,,,,
+C:/Users/kaixunwang/Rangehood/Rangehood.srcs/sources_1/new/regN.v,1734200819,verilog,,C:/Users/kaixunwang/Rangehood/Rangehood.srcs/sources_1/new/setter_clean_standard.v,,reg4,,,,,,,,
+C:/Users/kaixunwang/Rangehood/Rangehood.srcs/sources_1/new/setter_clean_standard.v,1734665794,verilog,,C:/Users/kaixunwang/Rangehood/Rangehood.srcs/sources_1/new/slow_clk_0p6s.v,,setter_clean_standard,,,,,,,,
+C:/Users/kaixunwang/Rangehood/Rangehood.srcs/sources_1/new/slow_clk_0p6s.v,1734277071,verilog,,C:/Users/kaixunwang/Rangehood/Rangehood.srcs/sim_1/new/tb.v,,clk_divider_0p05,,,,,,,,

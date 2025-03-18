@@ -1,0 +1,20 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../Rangehood.srcs/sources_1/new/Button_Press_Handler.v" \
+"../../../../Rangehood.srcs/sources_1/new/Clock_divider.v" \
+"../../../../Rangehood.srcs/sources_1/new/Debouncer.v" \
+"../../../../Rangehood.srcs/sources_1/new/Display_manager.v" \
+"../../../../Rangehood.srcs/sources_1/new/Rangehood_top.v" \
+"../../../../Rangehood.srcs/sources_1/new/State_Machine.v" \
+"../../../../Rangehood.srcs/sources_1/new/Timer.v" \
+"../../../../Rangehood.srcs/sources_1/new/Timer_s.v" \
+"../../../../Rangehood.srcs/sources_1/new/regN.v" \
+"../../../../Rangehood.srcs/sources_1/new/setter_clean_standard.v" \
+"../../../../Rangehood.srcs/sources_1/new/slow_clk_0p6s.v" \
+"../../../../Rangehood.srcs/sim_1/new/tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
